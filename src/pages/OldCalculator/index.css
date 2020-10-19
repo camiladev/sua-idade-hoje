@@ -1,0 +1,90 @@
+
+@media(width: 375px){
+   .content{
+      background-color: #F6F7F8;
+      height: 100vh; 
+   }
+
+   header{
+       background-image: url('../../assets/OldCalculator/mobile3.jpeg');
+       color: #FFFFFF;
+       width: 100vw;
+       height: 229px;
+       padding: 16px;
+
+       display: flex;
+       align-items: flex-end;
+   }
+
+   .content-header h1{
+        margin-bottom: 16px;
+   }
+
+   .form-birthday{
+       height: 200px;
+       margin: 16px;
+       padding-top: 25px;
+       padding-bottom: 16px;
+   }
+
+   .form-birthday form{
+       display: flex;
+       justify-content: center;
+       flex-flow: wrap;
+       margin-top: 12px;
+   }
+
+   .form-birthday input{
+       height: 44px;
+       font-size: 16px;
+       line-height: 20px;
+       text-align: center;
+
+       border: 1px solid #7c8894;
+       border-radius: 4px;
+   }
+
+   .form-birthday .inputs{
+        width: 100vw;
+        display: flex;
+        justify-content: space-between;
+   }
+
+   .form-birthday .day{
+        width: 82px;
+   }
+   .form-birthday .month{
+        width: 136px;
+    }   
+    .form-birthday .year{
+        width: 104px;
+    }
+
+    .form-birthday button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        margin-top: 37px;
+
+        width: 114px;
+        height: 40px;
+
+        background-color: #7b16ff;
+        color: #FFFFFF;
+        border: 0px;
+        border-radius: 50px;
+        box-shadow: 0px 3px 6px rgba(110,116,134,0.24);
+    }
+
+    .desc{
+        width: 100vw;
+        height: 320px;
+        background-color: #FFFFFF;
+
+        border-top: 1px solid #DFE7EF;
+        border-bottom: 1px solid #DFE7EF;
+
+        margin-bottom: 33px;
+    }
+}
