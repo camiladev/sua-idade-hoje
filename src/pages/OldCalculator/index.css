@@ -2,6 +2,7 @@
 
        .content{
           background-color: #DFE7EF;
+          width: 100vw;
        }
 @media(max-width: 414px){
 
@@ -9,7 +10,6 @@
         height: 100%;
      }
     header{
-        /* background-image: url('../../assets/OldCalculator/mobile3.jpeg'); */
         background: linear-gradient( 109.6deg,  rgba(9,9,121,1) 11.2%, rgba(144,6,161,1) 53.7%, rgba(0,212,255,1) 100.2% );
         color: #FFFFFF;
         width: 100vw;
@@ -28,18 +28,19 @@
         width: 100vw;
     }
 }
-
+/* Desktop */
 @media(min-width: 1024px){
     .content{
-        display: flex;
-        flex-direction: row-reverse;
-        justify-content: space-between;
+        
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 100vh;
+        grid-template-areas: "main header";
+
     }
 
     main {
-        width: 50vw;
-        height: 100vh;
-
+        grid-area: main;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -51,17 +52,24 @@
    
 
     header{
-        width: 50%;
-        height: 100vh;
-        /* background: url("../../assets/OldCalculator/desktop.svg")no-repeat 80% center; */
-        background: linear-gradient( 109.6deg,  rgba(9,9,121,1) 11.2%, rgba(144,6,161,1) 53.7%, rgba(0,212,255,1) 100.2% );
+        grid-area: header;
+        /* background: url("../../assets/OldCalculator/desktop.svg"); */
         color: #DFE7EF;
-        border-radius: 20px 0 0 20px;
-
+        border-radius: 100% 0 0 100%;
+        
         display: flex;
         justify-content: center;
         flex-direction: column;
+        
+        
+        background: linear-gradient( 109.6deg,  rgba(9,9,121,1) 11.2%, rgba(144,6,161,1) 53.7%, rgba(0,212,255,1) 100.2% );
+        /* background: #e0efe3; */
+        
     }
+    header h1{
+        margin-bottom: 15px;
+    }
+ 
 
     .content-header{
 
@@ -84,7 +92,6 @@
 
    .form-birthday form{
        display: flex;
-       justify-content: center;
        flex-flow: wrap;
        margin-top: 12px;
    }
@@ -99,21 +106,13 @@
        border-radius: 4px;
    }
 
-   .form-birthday .inputs{
-        width: 100vw;
-        display: flex;
-        justify-content: space-between;
-   }
+   .form-birthday .button{
+       height: 100%;
+       width: 100%;
 
-   .form-birthday .day{
-        width: 80px;
+       display: flex;
+       justify-content: center;
    }
-   .form-birthday .month{
-        width: 136px;
-    }   
-    .form-birthday .year{
-        width: 90px;
-    }
 
     .form-birthday button{
         display: flex;
@@ -164,6 +163,10 @@
 
         margin: 10px;
         margin-bottom: 20px;
+    }
+
+    .result p{
+        margin: 0%;
     }
 
     .result .result-container{
