@@ -166,7 +166,7 @@ function OldCalculator() {
                   <h2>Seja Bem-Vindo</h2>
                   <p>
                     Para descobrir, exatamente quantos anos você tem,
-                    basta colocar a data de nascimento nos campos acima.
+                    basta colocar a data de nascimento nos campos acima e clicar no botão calcular.
                   </p>
                   <br />
                   <p>
