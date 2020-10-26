@@ -131,6 +131,16 @@ function OldCalculator() {
       </header>
       <main>
         <div className="main-container">
+            <div className="adSense">
+                <amp-ad width="100vw" height="320"
+                  type="adsense"
+                  data-ad-client="ca-pub-0105330623756273"
+                  data-ad-slot="1200251087"
+                  data-auto-format="rspv"
+                  data-full-width="">
+                  <div overflow=""></div>
+                </amp-ad>
+            </div>
             <div className='form-birthday'>
                 <label>Informe sua data de nascimento:</label>
                 <form onSubmit={handleDateBirthday}>
@@ -179,6 +189,53 @@ function OldCalculator() {
         </div>
 
       </main>
+      <div className="contentExtra">
+            <div className="adSense">
+                <amp-ad width="100vw" height="320"
+                  type="adsense"
+                  data-ad-client="ca-pub-0105330623756273"
+                  data-ad-slot="1200251087"
+                  data-auto-format="rspv"
+                  data-full-width="">
+                  <div overflow=""></div>
+                </amp-ad>
+            </div>
+          <div className="text">
+            <h2>Origem do Aniversário</h2>
+            <br/>
+            <br/>
+            <p>
+              Os aniversários têm origem pagã relacionada com a magia 
+              (as velas simbolizam a ligação com espiritual e protecção) e
+              com a religião, embora no caso do cristianismo este costume estivesse abolido
+                até ao século IV, altura em que a Igreja começou a comemorar o nascimento de 
+                Jesus Cristo.
+            </p>
+            <br/>
+            <p>
+            Na antiga Grécia na Grécia, onde todos os anos se homenageava a Deusa da caça,
+             Artemis, com um bolo e várias velas em cima de bolos de mel redondos para simbolizar
+              a lua que, segundo a mitologia grega, era a forma da Deusa Artemis se expressar.
+            </p>
+            <br/>
+            <p>
+            Nessas sociedades primordiais as comemorações de aniversário eram reservadas às classes sociais de elite e aos deuses. Assim, tanto os egípcios como os gregos restringiam essas festividades apenas aos faraós e deuses. Já os romanos permitiam essas celebrações apenas ao imperador, à sua família e aos senadores.
+            </p>
+            <br/>
+            <p>
+            Com o tempo esse hábito acabou por chegar à Alemanha, na Idade Média, onde os camponeses festejam os aniversários dos seus filhos com um bolo, as velas em número idêntico à idade da criança e mais uma vela que simbolizava a luz da Vida.
+            </p>
+            <br/>
+            <p>
+              Na idade média as pessoas tinham uma crença profunda na existência de espíritos bons e de espíritos maus. Todos receavam que esses espíritos maus causassem mal ao aniversariante no seu dia de nascimento, pelo que ele ficava rodeado pela família e pelos amigos, cujos votos de felicidade e sua própria presença, o protegeriam contra os perigos desconhecidos que esse dia supostamente representava. A oferenda de presentes resultava numa protecção mais forte e quando acompanhada por uma refeição em conjunto ajudava a invocar a presença dos espíritos bons.
+            </p>
+            <br/>
+            <p>
+              Atualmente as festas de aniversário servem para celebrar a conquista de mais um ano de vida e já não se invocam espíritos bons ou se tenta afastar espíritos maus. Trata-se essencialmente de um dia que se quer feliz e alegre, passado na companhia das pessoas que nos são mais queridas e importantes.
+            </p>
+
+          </div>
+        </div>
     </div>
   );
 }
