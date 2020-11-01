@@ -131,7 +131,7 @@ function OldCalculator() {
       </header>
       <main>
         <div className="main-container">
-            <div className="adSense">
+            {/* <div className="adSense">
                 <amp-ad width="100vw" height="320"
                   type="adsense"
                   data-ad-client="ca-pub-0105330623756273"
@@ -140,7 +140,7 @@ function OldCalculator() {
                   data-full-width="">
                   <div overflow=""></div>
                 </amp-ad>
-            </div>
+            </div> */}
             <div className='form-birthday'>
                 <label>Informe sua data de nascimento:</label>
                 <form onSubmit={handleDateBirthday}>
@@ -190,7 +190,7 @@ function OldCalculator() {
 
       </main>
       <div className="contentExtra">
-            <div className="adSense">
+            {/* <div className="adSense">
                 <amp-ad width="100vw" height="320"
                   type="adsense"
                   data-ad-client="ca-pub-0105330623756273"
@@ -199,7 +199,7 @@ function OldCalculator() {
                   data-full-width="">
                   <div overflow=""></div>
                 </amp-ad>
-            </div>
+            </div> */}
           <div className="text">
             <h2>Origem do Aniversário</h2>
             <br/>
