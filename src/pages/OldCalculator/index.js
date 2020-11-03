@@ -25,6 +25,7 @@ function OldCalculator() {
 
     const day = 24*60*60*1000;
     
+    //Pega data atual
     var now = new Date();
     var monthNow = now.getMonth()+1;
     var dayNow = now.getDate();
@@ -47,6 +48,7 @@ function OldCalculator() {
     var birthdayDay = birthday.getDate();
     var mlsBirthday = birthday.getTime();
 
+    //calcula a quantidade de dias vividos desde o nascimento até hoje
     var dif = mlsNow - mlsBirthday;
     var qtdDays = dif/day; // Quatidade de dias
     setDays(qtdDays.toFixed(2));
@@ -74,40 +76,50 @@ function OldCalculator() {
         setCountDay(countD);
     }
    
-
-    for(var month = 1 ; month <= now.getMonth()+1; month ++){
+//verifica se o mês do aniversário já passou no ano atual
+console.log("mes atual ", monthNow);
+    for(var month = 1 ; month <= monthNow; month ++){
+      console.log("calcmes ", month, " mes aniver ", birthdayMonth );
       if(month === birthdayMonth){
-        for(var d = 1 ; d <= now.getDate()+1; d ++){
-          if(d === birthdayDay){
-            past = true;
+        console.log(" mesmo mes ", month, " mes aniver ", birthdayMonth );
+        if(birthdayMonth === monthNow){
+          for(var d = 1 ; d <= now.getDate()+1; d ++){
+            if(d === birthdayDay){
+              past = true;
+            }
           }
+
+        }else{
+          past = true;
         }
       }
     }
 
-    // var beginYearPast = new Date('01/01/'+(now.getFullYear()-1))
+  console.log("past ", past);
     var calc = 0;
     var y = 0;
-    // var daysYear = 0;
     
+    //se o mês já passou
     if(past){
     y = now.getFullYear() - birthday.getFullYear();
     setYearsOld(y);
-    // daysYear = (now - birthdayThisYear)/day;
     
     calc = ((now.getFullYear() - birthdayThisYear.getFullYear())*12);
     calc = calc + (monthNow - birthdayMonth);
     setMonthOld(calc);
   }else{
+    //se não passou
+  
     y = now.getFullYear() - (birthday.getFullYear()+1);
     setYearsOld(y);
-    // daysYear = (now - beginYear)/day;
+
     
     calc = ((now.getFullYear() - beginYear.getFullYear())*12);
     calc = calc + (monthNow - birthdayMonth);
     setMonthOld(calc);
   }  
   
+  //calcula quantos dias falta para o proximo aniversário
   var as = parseInt(birthday.getFullYear()+y+1);
   var diff = Date.UTC(as, birthdayMonth-1,birthdayDay,0,0,0) - Date.UTC(now.getFullYear(), monthNow-1,dayNow,0,0,0);
   var datee = diff/day;
