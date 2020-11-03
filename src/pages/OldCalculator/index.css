@@ -81,14 +81,7 @@
         flex-direction: column;
     }
 
-    .contentExtra{
-        grid-area: content;
-        width: 100%;
-    }
-
-    .text{
-        width: 60%;
-    }
+    
     
 }
 
@@ -191,24 +184,5 @@
         flex-direction: column;
     }
 
-    .contentExtra{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: auto;
-        
-        padding: 20px;
-    }
-
-    .text{
-        background: #fff;
-        border-radius: 20px;
-        height: auto;
-        padding: 20px;
-        font-size: 13px;
-
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
+    
     
