@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import '../OldCalculator/index.css';
 
+
 function OldCalculator() {
   const [date_birthday, setDateBirthday] = useState('');
   const [days, setDays] = useState(0); // total dias vividos
@@ -142,6 +143,11 @@ function OldCalculator() {
         
       </header>
       <main>
+            <div className='anuncio'>
+              <a href='https://www.hostg.xyz/aff_c?offer_id=12&aff_id=55912'>
+                <div className='banner'></div>
+              </a>
+            </div>
         <div className="main-container">
             
             <div className='form-birthday'>
@@ -174,6 +180,7 @@ function OldCalculator() {
                   <p className="birthday">Falta {daysLeft} dias para o seu aniversário!</p>
               </div>
             </div>
+            
             <div className='desc'>
               <div className="desc-container">
                   <h2>Seja Bem-Vindo</h2>
