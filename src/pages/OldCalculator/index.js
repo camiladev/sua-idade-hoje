@@ -77,11 +77,11 @@ function OldCalculator() {
     }
    
 //verifica se o mês do aniversário já passou no ano atual
-console.log("mes atual ", monthNow);
+// console.log("mes atual ", monthNow);
     for(var month = 1 ; month <= monthNow; month ++){
-      console.log("calcmes ", month, " mes aniver ", birthdayMonth );
+      // console.log("calcmes ", month, " mes aniver ", birthdayMonth );
       if(month === birthdayMonth){
-        console.log(" mesmo mes ", month, " mes aniver ", birthdayMonth );
+        // console.log(" mesmo mes ", month, " mes aniver ", birthdayMonth );
         if(birthdayMonth === monthNow){
           for(var d = 1 ; d <= now.getDate()+1; d ++){
             if(d === birthdayDay){
